@@ -68,7 +68,7 @@ def main():
             log(f"FAIL {username} -> {result.stderr.strip()}")
             updated_inventory.append(entry)  # keep old password
         else:
-            print(f"[+] Updated {username}")
+            print(f"[+] Updated {username}: {old_pw} -> {new_pw}")
             log(f"OK {username}: {old_pw} -> {new_pw}")
             updated_inventory.append(f"{username} {new_pw}")
 
